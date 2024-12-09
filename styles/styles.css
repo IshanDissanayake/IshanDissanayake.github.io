@@ -1,0 +1,204 @@
+/* Set the entire page background to dark */
+html, body {
+  background-color: #1d2635; /* Dark background */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure the full page width is dark */
+}
+
+/* Dark theme navbar */
+.navbar {
+  background-color: #1d2635; /* Darker background */
+}
+.navbar-nav .nav-link {
+  color: #ffffff; /* White text */
+  font-size: 1.1rem;
+}
+.navbar-nav .nav-item {
+  padding: 0 .5rem;
+}
+
+/* Hero section with dark theme adjustments */
+section.hero {
+  background-color: #2c3e50; /* Darker background */
+  padding-top: 80px;
+  padding-bottom: 70px;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff; /* White text */
+}
+
+/* Container padding adjustments */
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  section [class^="container"] {
+    padding: 4rem;
+  }
+  nav [class^="container"] {
+    padding: 0 4rem;
+  }
+  section.hero {
+    text-align: center;
+  }
+  section.hero .img-fluid {
+    width: 80%;
+  }
+}
+
+/* About section text color and background */
+section.about {
+  background-color: #2c3e50; /* Dark background */
+  padding: 4rem 2rem;
+}
+section.about p {
+  width: 75%;
+  text-align: justify;
+  margin: 0 auto;
+  color: #e0e0e0; /* Light text */
+}
+
+@media screen and (min-width: 1024px) {
+  section.about {
+    width: 75%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+}
+
+section.container {
+  width: 75%;
+  text-align: justify;
+  color: #e0e0e0; /* Light text */
+}
+
+/* Alternating section background */
+section:nth-child(2n) {
+  background-color: #34495e; /* Darker background */
+}
+
+/* Portfolio images with light border */
+.portfolio-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; 
+}
+
+.portfolio-image img {
+  max-width: 75%; 
+  height: 200px; 
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+/* Projects section text */
+section.projects {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff; /* Light text */
+  background-color: #2c3e50; /* Dark background */
+}
+
+/* Card styling with dark background */
+section.card {
+  max-width: 17rem;
+  text-align: left;
+  background-color: #2c3e50; /* Darker card background */
+  color: #ffffff; /* Light text */
+}
+
+/* Button styling */
+.btn-outline-dark {
+  border: 2px solid #ffffff; /* Light border */
+  box-shadow: 4px 4px #ffffff; /* Light shadow */
+  transition: all 0.4s;
+}
+.btn-outline-dark:hover {
+  box-shadow: 4px 4px #f5a841; /* Accent color on hover */
+}
+
+/* Contact section styling */
+.contact {
+  text-align: center;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  width: 75%;
+  color: #ffffff; /* White text */
+  background-color: #2c3e50; /* Dark background */
+}
+
+/* Social media styling */
+.row.social-media {
+  display: flex; 
+  justify-content: center; 
+  gap: 1rem; 
+}
+
+.row.social-media .sm-icon {
+  flex: 0 1 auto; 
+  display: flex;
+  justify-content: center; 
+}
+
+a {
+  color: #1d2635; /* Light text */
+  text-decoration: none;
+  transition: all .3s;
+}
+
+a:not(.btn):hover {
+  color: #f5a841; /* Accent color on hover */
+}
+
+@media (max-width: 576px) {
+  .row.social-media {
+    flex-direction: column; 
+    gap: 1.5rem;
+  }
+}
+
+/* Tech stack section styling */
+section.tech-stack  {
+  text-align: center;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 0 auto;
+  color: #ffffff; /* White text */
+  background-color: #2c3e50; /* Dark background */
+}
+
+/* Skill item styling */
+.skill-item {
+  width: 200px;
+  height: 200px;
+}
+
+.skill-item1 {
+  width: 100px;
+  height: 100px;
+}
+
+/* Footer styling */
+.footer {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: #1d2635; /* Dark footer background */
+  color: #ffffff; /* Light text */
+}
+
+.footer .container {
+  margin-bottom: 0;
+}
+
+section.footer {
+  margin: 0;
+  padding: 0;
+}
